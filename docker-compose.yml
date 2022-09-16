@@ -1,0 +1,7 @@
+services:
+  jekyll:
+    image: jewsh1r/jekyll-blog
+    volumes:
+      - /home/jekyll/blog:/srv/jekyll
+    ports:
+      - '4000:4000'
