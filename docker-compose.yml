@@ -1,6 +1,7 @@
 services:
   jekyll:
     image: jewsh1r/jekyll-blog
+    command: jekyll server -H 0.0.0.0
     volumes:
       - /home/jekyll/blog:/srv/jekyll
     ports:
