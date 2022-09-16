@@ -5,7 +5,7 @@ RUN apk update
 RUN apk add --no-cache build-base gcc cmake git 
 RUN gem update bundler && gem install bundler jekyll
 WORKDIR /srv/jekyll
-COPY Gemfile .
+COPY Gemfile* .
 COPY jekyll-theme-chirpy.gemspec .
 RUN bundle install
 
