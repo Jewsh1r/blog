@@ -36,9 +36,9 @@ Also you can see awful connected HDD, it is because I could n't find front panel
 After first work in IRL i bought another server with 1U case, motherboard, PSU. It was same CPU socket (2011), move from old server hdd,cpu, ram and bought new ram on Ali.
 My friend Serpentiel from collage advised me try Proxmox. Today will 2 years I'm using Proxmox. I got a lot of skill with LXC,QEMU,IPTABLES. Pondering now I can't understand how I work with linux before.
 
-![proxmox](/assets/img/proxmox.ppg){: .normal }
+![proxmox](/assets/img/proxmox.png){: .normal }
 
-![supermicro](/assets/img/supermicro.ppg){: .normal }
+![supermicro](/assets/img/supermicro.jpg){: .normal }
 
 ### End
 
