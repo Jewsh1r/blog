@@ -6,3 +6,4 @@ services:
       - /home/jekyll/blog:/srv/jekyll
     ports:
       - '4000:4000' 
+    
