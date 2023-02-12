@@ -2,8 +2,8 @@
 layout: post
 title: First Post
 date: 2022-10-02 18:00 +0000
-categories: [Blogging, Tutorial]
-tags: [devops, life, csgo, proxmoxm, supermicro, servers]
+categories: [Blogging]
+tags: [devops, life, csgo, proxmox, supermicro, servers]
 ---
 ---
 
