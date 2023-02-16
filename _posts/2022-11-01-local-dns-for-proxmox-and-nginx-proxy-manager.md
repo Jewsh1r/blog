@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Local DNS for proxmox and Nginx proxy manager
+title: Local DNS for Proxmox and Nginx proxy manager
 categories: [Guides]
 tags: [devops, guides, nginx, proxmox, proxy manager, servers]
 ---
@@ -9,7 +9,7 @@ tags: [devops, guides, nginx, proxmox, proxy manager, servers]
 
 `apt install dnsmasq`
 
-After installation, adding to autostart`
+After installation, adding to autostart
 
 `systemctl enable dnsmasq`
 
@@ -32,13 +32,13 @@ Also we can change path to `dhcp-leasefile=/var/lib/misc/dnsmasq.leases` all DHC
 
 Interface vmbr1 using for all my LXC, you can change to any Interface where you need DHCP
 
-here image in proxmox how to setup lxc or vm in proxmox
+![Network device setup](/assets/img/network_device.png)
 
-We can commit the ip to the mac address in dnsmasq to do this, we have to do the following `dhcp-host=76:34:4a:91:a7:e8,10.10.5.10,Web` add this line in `dnsmasq.conf`
+We can commit the ip to the mac address in dnsmasq to do this, we have to do the following `dhcp-host=xx:xx:xx:xx:xx:xx,10.10.5.10,Web` add this line in `dnsmasq.conf`
 
-### Installing Nginx proxy manager in portainer 
+### Installing Nginx proxy manager in portainer
 
-In my case, I created the LXC for Portainer and start installing. 
+In my case, I created the LXC for Portainer and start installing.
 First of all create new container give name and paste this repository: 'jc21/nginx-proxy-manager:latest' after that we need add ports: 443, 80, 81. 443 and 80 its classic and 81 port for admin panel
 
 ![Nginx in Portainer](/assets/img/portainer_nginx.png)
@@ -57,14 +57,14 @@ And here we go, Nginx proxy manager ready!
 
 Your ip of lxc and port 81 for example http://portainer.test.lan:81
 
-It will work with subnet if you add DNS in your VPN, for example: MY DNS server IP 10.10.5.1 and after that you can access 
+It will work with subnet if you add DNS in your VPN, for example: MY DNS server IP 10.10.5.1 and after that you can access
 to lxcs with their names
 
-default username 'admin@example.com'
+Default username 'admin@example.com'
 
-default password 'changeme'
+Default password 'changeme'
 
-after login change login and password after that go to Proxy hosts and add your first domain.
+After login change login and password after that go to Proxy hosts and add your first domain.
 
 Some example here:
 

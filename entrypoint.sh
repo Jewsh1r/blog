@@ -15,6 +15,8 @@ if [ ! -f Gemfile ]; then
   exit 1
 fi
 
-bundle install
-
+bundle install 
+gem update bundler
+gem install bundler jekyll
+bundle clean --force
 exec "$@"
